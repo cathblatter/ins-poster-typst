@@ -103,13 +103,13 @@ set page(
                             align: right + horizon,
                             colspan: 2, 
                             inset: 30pt,
-                             image("./_extensions/ins-poster-typst/logo-unibas-left-en.png")
+                             image("./logos/logo-unibas-left-en.png")
                           ),
                           grid.cell(
                             align: right + horizon,
                             colspan: 2,
                             inset: 30pt,
-                            image("./_extensions/ins-poster-typst/logo-ins-right.png", width: 25%)
+                            image("./logos/logo-ins-right.png", width: 25%)
                           )
                         )
                       )
