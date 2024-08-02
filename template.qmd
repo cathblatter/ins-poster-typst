@@ -1,0 +1,46 @@
+---
+title: The INS-Poster template for quarto and typst!
+poster-authors: Catherine Blatter
+departments: Institute of Nursing Science
+footer-emails: catherine.blatter@unibas.ch | https://github.com/cathblatter
+format:
+  ins-poster-typst-typst: default
+  
+---
+
+
+# Introduction
+
+- This is a poster template for quarto with the INS logo
+
+- It uses the typst-backend 
+
+- It defaults to portrait A0
+
+
+## More Information
+
+You can learn more about creating custom Typst templates here: 
+
+<https://quarto.org/docs/prerelease/1.4/typst.html#custom-formats>
+
+
+# Some results
+
+```{r}
+#| warning: false
+#| echo: false 
+#| layout-ncol: 2
+library(tidyverse)
+library(starfish)
+
+set.seed(12)
+ddiamonds <- diamonds |> dplyr::sample_n(size = 2000)
+
+ggplot(ddiamonds, aes(x = cut, y = price, fill = clarity)) +
+  geom_col() +
+  scale_fill_starfish_d()
+
+ggplot(mtcars, aes(x = factor(cyl), size = mpg, y = am)) +
+  geom_point()
+```
