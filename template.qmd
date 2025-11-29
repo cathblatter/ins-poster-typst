@@ -30,7 +30,7 @@ You can learn more about creating custom Typst templates here:
 ```{r}
 #| warning: false
 #| echo: false 
-#| layout-ncol: 2
+#| layout-ncol: 1
 library(tidyverse)
 library(starfish)
 
